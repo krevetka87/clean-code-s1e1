@@ -37,11 +37,11 @@ body {
 .add-task__wrapper {
   display: flex;
 }
-ul {
+.incomplete-tasks, .complited-tasks {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.complited-tasks__item, .main__title {
   list-style:none;
 }
 input,button{
@@ -147,11 +147,11 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.incomplete__item_edit-mode input[type="text"] {
+.incomplete__item_edit-mode > .incomplete-tasks__input {
   display:inline-block;
   width:224px;
 }
 
-ul li.incomplete__item_edit-mode label {
+.incomplete__item_edit-mode > .incomplete-tasks__label {
   display:none;
 }
